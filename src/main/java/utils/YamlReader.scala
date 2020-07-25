@@ -1,10 +1,14 @@
+package utils
 
 
+
+
+import java.io.{File, FileInputStream}
 
 import org.yaml.snakeyaml.Yaml
 import org.yaml.snakeyaml.constructor.Constructor
+
 import scala.beans.BeanProperty
-import java.io.{File, FileInputStream}
 
 
 object YamlReader {

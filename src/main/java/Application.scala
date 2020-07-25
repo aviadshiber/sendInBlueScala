@@ -1,4 +1,5 @@
 import Data.{Email, Person}
+import utils.{SendInBlueServer, YamlReader}
 
 import concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Await

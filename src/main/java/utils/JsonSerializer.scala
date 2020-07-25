@@ -1,3 +1,5 @@
+package utils
+
 import Data.{Email, Person}
 
 object JsonSerializer {

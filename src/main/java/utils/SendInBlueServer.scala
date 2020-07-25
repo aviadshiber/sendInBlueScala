@@ -1,15 +1,11 @@
+package utils
+
 import Data.Email
-import com.squareup.okhttp.{
-  MediaType,
-  OkHttpClient,
-  Request,
-  RequestBody,
-  Response
-}
-import JsonSerializer._
+import com.squareup.okhttp.{MediaType, OkHttpClient, Request, RequestBody}
+import utils.JsonSerializer._
 import scala.concurrent.{ExecutionContext, Future}
 
-object SendInBlueServer{
+object SendInBlueServer {
 
   private val apiKey =YamlReader.readServerSecret().apiKey
   private val serverUrl = "https://api.sendinblue.com/v3/smtp/email"
